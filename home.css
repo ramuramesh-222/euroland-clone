@@ -1,0 +1,435 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    position: fixed;
+    z-index: 111;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #0f2440;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+}
+
+.nav_logo,
+.nav_link {
+    align-content: center;
+
+}
+
+.nav_link ul,
+li {
+    display: inline-block;
+}
+
+.nav_link a {
+    display: block;
+    font-family: "Montserrat", serif;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 6px 15px;
+    border-radius: 4px;
+}
+
+.nav_link a:hover {
+    background-color: #20bdd8;
+    color: #0f2440;
+
+}
+  
+
+
+/* --------------------section 1 */
+.section {
+    background: url(https://www.eurolandindia.com/images/banner.jpg) no-repeat top center fixed;
+    width: 100%;
+    padding: 150px 0px 70px;
+    top: 0%;
+    left: 0%;
+    background-size: cover;
+}
+
+.section_1 {
+    width: 75%;
+    margin: auto;
+    position: relative;
+}
+
+.section_2 {
+    display: flex;
+}
+
+.sec1_img {
+    flex: 60%;
+    max-width: auto ;
+
+
+
+}
+
+.sec1_con {
+    flex: 40%;
+    padding: 20px 30px;
+    font-family: "Montserrat", serif;
+    color: white;
+    overflow: hidden;
+    background-color: #0f2440;
+
+
+}
+
+.sec1_con h5 {
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+.sec1_img1 {
+    position: relative;
+}
+
+.img_cont {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 40px 25px;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    color: white;
+}
+
+/* ------------------section 2 */
+.contant2_1 {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    color: #0f2440;
+    padding: 30px 0px;
+}
+
+.con_h1 {
+    font-size: 30px;
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #0f2440;
+
+
+}
+
+.contant_box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contant_box1 {
+    height: 250px;
+    width: 330px;
+    margin: 7.5px;
+    padding: 30px 15px;
+
+}
+
+.contant_box1 a {
+    text-decoration: none;
+    color: #0f2440;
+
+}
+
+.contant_box_head {
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+
+.line {
+    background-color: #20bdd8;
+    height: 1px;
+    width: 30px;
+    margin: auto;
+
+}
+
+.contant_box_para {
+    font-size: 13px;
+    line-height: 25px;
+    padding-top: 20px;
+}
+
+.contant_box1:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+/* section 3 */
+.contant3 {
+    background-color: #efeded;
+    padding: 80px 0px 150px 0px;
+    font-family: "Montserrat", serif;
+
+}
+
+.contant3_1 h1 {
+    padding-bottom: 50px;
+}
+
+.contant3_1,
+.contant4,
+.contant5_wid {
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contant3_2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.contant3_left {
+    flex: 20%;
+}
+
+.contant3_rht {
+    flex: 80%;
+    padding: 10px;
+}
+
+.contant3_left img {
+    max-width: 100%;
+}
+
+.contant3_rht span {
+    display: block;
+}
+
+.contant3_rht div {
+    padding: 0px 30px 0px 30px;
+    font-size: 20px;
+}
+
+/* ___-----section_4 */
+.contant4{
+    padding: 40px 0px;
+    height: 200px;
+}
+.contant4 h1{
+    margin-bottom: 20px;
+}
+.contant4_1 {
+    position: relative;
+    /* border: 2px solid red; */
+    /* height: 105px; */
+    /* margin-inline: auto; */
+}
+
+.contant4_img {
+    width: 150px;
+    height: 105px;
+    position: absolute;
+    left: max(calc(150px *8),100%);
+    /* left: 100%; */
+    animation-name: scrollleft;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes scrollleft{
+    to{
+        left: -150px;
+    }
+
+}
+.scr1{
+    animation-delay: calc(30s / 8 * ( 8 - 1) * -1);
+}
+.scr2{
+    animation-delay: calc(30s / 8 * ( 8 - 2) * -1);
+}
+.scr3{
+    animation-delay: calc(30s / 8 * ( 8 - 3) * -1);
+}
+.scr4{
+    animation-delay: calc(30s / 8 * ( 8 - 4) * -1);
+}
+.scr5{
+    animation-delay: calc(30s / 8 * ( 8 - 5) * -1);
+}
+.scr6{
+    animation-delay: calc(30s / 8 * ( 8 - 6) * -1);
+}
+.scr7{
+    animation-delay: calc(30s / 8 * ( 8 - 7) * -1);
+}
+.scr8{
+    animation-delay: calc(30s / 8 * ( 8 - 8) * -1);
+}
+
+.contant4_img img {
+    max-width: 100%;
+}
+
+/* <!-- section___-5 --> */
+
+.contant5 {
+    background: url(https://www.eurolandindia.com/images/completed-bg.jpg) no-repeat center center;
+    padding: 100px 0px;
+    background-size: cover;
+    font-family: "Montserrat", serif;
+    background-color: #0f2440;
+
+}
+
+.contant5_wid h1 {
+    color: white;
+}
+
+.contant5_1 {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+.contant5_2 b {
+    font-size: 45px;
+
+}
+
+.contant5_wid h1 {
+    padding: 40px 0px;
+}
+
+/* <!-- section___--6 --> */
+.contant6 {
+    background-color: #223a5a;
+    padding: 30px 0px;
+    font-family: "Montserrat", serif;
+}
+
+.contant6_1 {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+
+}
+
+.contant6_2 {
+    height: 200px;
+    width: 260px;
+    padding: 10px;
+
+
+}
+
+.location a {
+    color: inherit;
+    text-decoration: none;
+    color: #337ab7;
+    font-size: 25px;
+}
+
+.location p {
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 25px;
+    padding: 20px 0px;
+}
+
+.location a:hover {
+    color: white;
+}
+
+/* <!-- footer---7 --> */
+.contant7 {
+    background-color: #0f2440;
+    padding: 30px 0px 40px;
+    font-family: "Montserrat", serif;
+
+}
+
+.contant7_1 {
+    display: flex;
+    color: white;
+}
+
+.contant7_2 {
+    flex: 30%;
+    padding: 0px 20px;
+
+
+}
+
+.contant7_3 {
+    flex: 40%;
+    padding: 0px 20px;
+
+}
+
+.contant7_4 {
+    flex: 20%;
+    padding: 0px 20px;
+}
+
+.contant7_wid {
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contant7_1 p{
+    font-size: 13px;
+    line-height: 25px;
+}
+.contant7_1 hr{
+    margin-bottom: 10px;
+}
+.contant7_1 span{
+    padding-right: 7px;
+    color: white;
+}
+.contant7_1 h2{
+    text-transform: uppercase;
+}
+.contant7_4 a{
+    color: #ffffff;
+}
+
+.contant7_4 a:hover{
+    color: #20bdd8;
+}
+.foot_para  {
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .contant3_2 {
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width:800px) {
+    .contant7_1 {
+        flex-direction: column;
+    }
+
+
+}
