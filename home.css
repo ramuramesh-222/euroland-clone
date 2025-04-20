@@ -7,6 +7,7 @@ header {
     position: fixed;
     z-index: 111;
     width: 100%;
+    top: 0;
 }
 
 .navbar {
@@ -46,65 +47,6 @@ li {
 
 }
   
-
-
-/* --------------------section 1 */
-.section {
-    background: url(https://www.eurolandindia.com/images/banner.jpg) no-repeat top center fixed;
-    width: 100%;
-    padding: 150px 0px 70px;
-    top: 0%;
-    left: 0%;
-    background-size: cover;
-}
-
-.section_1 {
-    width: 75%;
-    margin: auto;
-    position: relative;
-}
-
-.section_2 {
-    display: flex;
-}
-
-.sec1_img {
-    flex: 60%;
-    max-width: auto ;
-
-
-
-}
-
-.sec1_con {
-    flex: 40%;
-    padding: 20px 30px;
-    font-family: "Montserrat", serif;
-    color: white;
-    overflow: hidden;
-    background-color: #0f2440;
-
-
-}
-
-.sec1_con h5 {
-    font-weight: lighter;
-    line-height: 25px;
-}
-
-.sec1_img1 {
-    position: relative;
-}
-
-.img_cont {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    padding: 40px 25px;
-    font-family: "Montserrat", serif;
-    font-size: 20px;
-    color: white;
-}
 
 /* ------------------section 2 */
 .contant2_1 {
@@ -414,10 +356,6 @@ li {
     padding: 50px 0px;
 }
 
-
-
-
-
 @media screen and (max-width:800px) {
     .contant3_2 {
         flex-direction: column;
@@ -433,3 +371,13 @@ li {
 
 
 }
+
+@media screen and (max-width:700px) {
+    .headerdown img{
+        display: none;
+    }
+
+
+}
+
+
